@@ -98,6 +98,9 @@
         <p class="field-note">Fees listed are starting prices. Complex, high-liability, or extended-travel properties may be higher. Your exact fee is quoted before you commit.</p></div>
       <div class="field"><label for="message">Additional Information</label><textarea id="message" name="message" rows="5"></textarea></div>
       <button type="submit" class="btn btn-primary">Submit Request</button>
+    
+      <!-- Cloudflare Turnstile: free bot check, normally invisible to real visitors -->
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAEFgrxW4wCKlch2R" data-theme="light" data-appearance="interaction-only" style="margin:14px 0;"></div>
     </form>
   </div>
   <aside class="contact-info-col">
@@ -192,5 +195,6 @@
     .catch(function () { /* non-blocking */ });
 })();
 </script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>
